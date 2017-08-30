@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>OnlineBookShop</display-name>
+  
+  <servlet>
+    <servlet-name>CreateAccount</servlet-name>
+    <servlet-class>com.onlineshop.AccountCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateAccount</servlet-name>
+    <url-pattern>/AccountCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.onlineshop.LoginOperation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/LoginOperation</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>BookInfo</servlet-name>
+    <servlet-class>com.onlineshop.BookInfoOperation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookInfo</servlet-name>
+    <url-pattern>/BookInfoOperation</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Book</servlet-name>
+    <servlet-class>com.onlineshop.UserBookOperation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Book</servlet-name>
+    <url-pattern>/UserBookOperation</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
